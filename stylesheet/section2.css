@@ -1,0 +1,29 @@
+.section2__content {
+    height: 100vh;
+    padding-top: 20%;
+    padding: 10vh;
+    background: #2C2A32;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    margin: auto;
+}
+
+.section2__text-title {
+    font-size: 3rem;
+    line-height: 120%;
+    margin-top: 8%;
+    width: 70%;
+    color: #FEFEFE;
+    font-weight: 400;
+}
+
+.section2__text_desc {
+    font-size: 1rem;
+    line-height: 150%;
+    width: 50%;
+    padding-bottom: 50px;
+    padding-top: 2%;
+    color: #FEFEFE;
+    font-weight: 100;
+    border-bottom: 10px solid #48D8A4;
+
+}

@@ -1,0 +1,38 @@
+/* Estilos para a seção principal */
+.section1__content {
+    height: 100vh;
+    padding: 10vh;
+    background: linear-gradient(120deg, #2C2A32 57%, #48D8A4 33%);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    margin: auto;
+}
+
+.section1__text {
+    font-size: 3rem;
+    line-height: 120%;
+    padding: 20px;
+    width: 70%;
+    margin-top: 140px;
+    color: #FEFEFE;
+    font-weight: 400;
+    border-left: 10px solid #48D8A4;
+}
+
+.section1__text_subtitle {
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 20px;
+    color: #FEFEFE;
+    font-weight: 100;
+    border-left: 10px solid #48D8A4;
+}
+
+.section1__text_desc {
+    font-size: 1rem;
+    line-height: 150%;
+    width: 50%;
+    padding: 20px;
+    color: #FEFEFE;
+    font-weight: 100;
+    border-left: 10px solid #48D8A4;
+}
