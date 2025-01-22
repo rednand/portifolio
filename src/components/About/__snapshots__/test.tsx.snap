@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Component renders the About component correctly 1`] = `
+.c0 {
+  background-color: #2c2a32;
+  height: 100vh;
+  padding: 10vh;
+  font-family: 'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  margin: auto;
+}
+
+.c1 {
+  font-size: 4rem;
+  line-height: 120%;
+  margin-top: 8%;
+  width: 70%;
+  color: #fefefe;
+  font-weight: 400;
+}
+
+.c2 {
+  font-size: 1.7rem;
+  line-height: 150%;
+  width: 60%;
+  padding-bottom: 50px;
+  padding-top: 2%;
+  color: #fefefe;
+  font-weight: 100;
+  border-bottom: 10px solid #48d8a4;
+}
+
+<section
+  class="c0"
+>
+  <section>
+    <div>
+      <h3
+        class="c1"
+      >
+        Sobre
+      </h3>
+      <p
+        class="c2"
+      >
+        Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation. My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API. When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds .
+      </p>
+    </div>
+  </section>
+</section>
+`;
