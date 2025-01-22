@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bio Component renders the Bio component correctly 1`] = `
+.c0 {
+  height: 100vh;
+  padding: 10vh;
+  background: linear-gradient(120deg, #2c2a32 57%, #48d8a4 33%);
+  font-family: 'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  margin: auto;
+}
+
+.c1 {
+  font-size: 4rem;
+  line-height: 120%;
+  padding: 20px;
+  width: 70%;
+  margin-top: 140px;
+  color: #fefefe;
+  font-weight: 400;
+  border-left: 10px solid #48d8a4;
+}
+
+.c2 {
+  font-size: 2.5rem;
+  width: 50%;
+  padding: 20px;
+  color: #fefefe;
+  font-weight: 100;
+  border-left: 10px solid #48d8a4;
+}
+
+.c3 {
+  font-size: 1.5rem;
+  line-height: 150%;
+  width: 50%;
+  padding: 20px;
+  color: #fefefe;
+  font-weight: 100;
+  border-left: 10px solid #48d8a4;
+}
+
+<main
+  class="c0"
+>
+  <div>
+    <h1
+      class="c1"
+    >
+      lorem ipsium lorem ipsiumlorem
+    </h1>
+    <h3
+      class="c2"
+    >
+      Desenvolvedor Front-End
+    </h3>
+    <p
+      class="c3"
+    >
+      Analista de Sistemas com experiência na área de Desenvolvimento Web / Front-end. Trabalho há 2 anos desenvolvendo aplicações web para a área de crédito e investimentos utilizando ReactJS, HTML, CSS, JavaScript e React Native.
+    </p>
+  </div>
+</main>
+`;
