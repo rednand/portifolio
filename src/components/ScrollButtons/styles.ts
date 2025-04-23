@@ -8,36 +8,38 @@ export const DivScrollButtons = styled.div`
   flex-direction: column;
   align-items: flex-end;
   right: 5vw;
-  top: 43vh;
+  top: 8vh;
   position: fixed;
   gap: 1rem;
 `
 
 export const ButtonsScrollButton = styled.button<{
-  size: 'small' | 'medium' | 'large'
+  size: 'small' | 'medium' | 'large' | 'large-last'
 }>`
-  border: 1px solid #48d8a4;
   background-color: #2c2a32;
   color: #fefefe;
-  padding: 5px 20px;
-  text-align: center;
+  padding: 5px 15px;
+  text-align: right;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
 
   width: ${(props) => {
-    if (props.size === 'small') return '120px'
-    if (props.size === 'medium') return '140px'
-    if (props.size === 'large') return '160px'
+    if (props.size === 'small') return '80px'
+    if (props.size === 'medium') return '100px'
+    if (props.size === 'large') return '120px'
+    if (props.size === 'large-last') return '140px'
   }};
 
   clip-path: ${(props) => {
     if (props.size === 'small')
-      return 'polygon(12% 0, 100% 0, 100% 100%, 0 100%)'
+      return 'polygon(13% 0, 100% 0, 100% 100%, 0 100%)'
     if (props.size === 'medium')
-      return 'polygon(10% 0, 100% 0, 100% 100%, 0 100%)'
+      return 'polygon(12% 0, 100% 0, 100% 100%, 0 100%)'
     if (props.size === 'large')
-      return 'polygon(8% 0, 100% 0, 100% 100%, 0 100%)'
+      return 'polygon(11% 0, 100% 0, 100% 100%, 0 100%)'
+    if (props.size === 'large-last')
+      return 'polygon(10% 0, 100% 0, 100% 100%, 0 100%)'
   }};
 
   &:hover {

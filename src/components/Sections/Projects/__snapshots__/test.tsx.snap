@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Projects /> should render the heading 1`] = `
+.c0 {
+  height: 100vh;
+  padding: 10vh;
+  background: #2c2a32;
+  font-family: 'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  margin: auto;
+  scroll-snap-align: start;
+}
+
+.c1 {
+  font-size: 2.5rem;
+  color: #fefefe;
+  margin-bottom: 5%;
+}
+
+.c2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 5%;
+  justify-content: flex-start;
+}
+
+.c3 {
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.c3:hover {
+  transform: translateY(-5px);
+  border-bottom: 5px solid #48d8a4;
+}
+
+.c4 {
+  width: 100%;
+  height: 150px;
+  object-fit: fill;
+  border-radius: 8px 8px 0 0;
+  opacity: 0.5;
+}
+
+.c4:hover {
+  opacity: 1;
+}
+
+.c5 {
+  padding: 10px;
+}
+
+.c6 {
+  font-size: 1.5rem;
+  color: #fefefe;
+  margin: 5% 0;
+}
+
+.c6 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.c6 a:hover {
+  color: #48d8a4;
+}
+
+.c7 {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+<section
+  class="c0"
+>
+  <h1
+    class="c1"
+  >
+    Projetos
+  </h1>
+  <div
+    class="c2"
+    data-testid="card-projects"
+  >
+    <div
+      class="c3"
+    >
+      <img
+        alt="Se Liga, Hein"
+        class="c4"
+        src="/images/se-liga.png"
+      />
+      <div
+        class="c5"
+      >
+        <h3
+          class="c6"
+        >
+          <a
+            href="https://se-liga-hein.vercel.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Se Liga, Hein
+          </a>
+        </h3>
+        <p
+          class="c7"
+        >
+          Projeto desenvolvido no curso de Desenvolvimento Web Front-End Node da Digital House.
+        </p>
+      </div>
+    </div>
+    <div
+      class="c3"
+    >
+      <img
+        alt="Aplicativo Web VHS 404"
+        class="c4"
+        src="/images/app-vhs404.png"
+      />
+      <div
+        class="c5"
+      >
+        <h3
+          class="c6"
+        >
+          <a
+            href="https://vhs404.vercel.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Aplicativo Web VHS 404
+          </a>
+        </h3>
+        <p
+          class="c7"
+        >
+          Aplicativo de lançamentos de filmes de terror desenvolvido durante estágio como desenvolvedor Front-End.
+        </p>
+      </div>
+    </div>
+    <div
+      class="c3"
+    >
+      <img
+        alt="API do Aplicativo Web VHS 404"
+        class="c4"
+        src="/images/api-vhs404.png"
+      />
+      <div
+        class="c5"
+      >
+        <h3
+          class="c6"
+        >
+          <a
+            href="https://api-vhs404.vercel.app/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            API do Aplicativo Web VHS 404
+          </a>
+        </h3>
+        <p
+          class="c7"
+        >
+          API desenvolvida para o aplicativo web VHS 404, criada durante estágio como desenvolvedor Front-End.
+        </p>
+      </div>
+    </div>
+    <div
+      class="c3"
+    >
+      <img
+        alt="Desenvolvedor Front-End"
+        class="c4"
+        src="/images/corebiz.png"
+      />
+      <div
+        class="c5"
+      >
+        <h3
+          class="c6"
+        >
+          Desenvolvedor Front-End
+        </h3>
+        <p
+          class="c7"
+        >
+          Landing page criada durante o bootcamp Hiring Coders, que faz a integração da API do VTEX IO com a API da AWS.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;

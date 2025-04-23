@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About Component renders the About component correctly 1`] = `
+.c0 {
+  background-color: #2c2a32;
+  height: 100vh;
+  padding: 10vh;
+  font-family: 'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
+  margin: auto;
+  scroll-snap-align: start;
+}
+
+.c1 {
+  font-size: 4rem;
+  line-height: 120%;
+  margin-top: 8%;
+  width: 70%;
+  color: #fefefe;
+  font-weight: 400;
+}
+
+.c2 {
+  font-size: 1.7rem;
+  line-height: 150%;
+  width: 60%;
+  padding-bottom: 50px;
+  padding-top: 2%;
+  color: #fefefe;
+  font-weight: 100;
+  border-bottom: 10px solid #48d8a4;
+}
+
+<section
+  class="c0"
+>
+  <section>
+    <div>
+      <h3
+        class="c1"
+      >
+        Sobre
+      </h3>
+      <p
+        class="c2"
+      >
+        Minha jornada na tecnologia começou no início de 2019, durante um mestrado em Bioinformática, onde descobri o gosto pela programação com Python e Perl. Em 2020, decidi focar no desenvolvimento de sistemas e iniciei uma nova graduação em Análise e Desenvolvimento de Sistemas. Desde então, venho me especializando em tecnologias como ReactJS, TypeScript, JavaScript, React Native além de ferramentas modernas como NextJS, Redux, React Query e Material UI. Hoje, atuo na Multiplica Crédito e Investimento, trabalhando em sistemas financeiros com arquitetura de micro frontends (Single-SPA). Atualmente, finalizei uma pós-graduação em Desenvolvimento Web Full Stack pela PUC Minas e sigo em constante evolução, sempre buscando aprender e transformar boas ideias em soluções reais e acessíveis
+      </p>
+    </div>
+  </section>
+</section>
+`;
