@@ -31,8 +31,8 @@ export const Title = styled.h1`
 
   @media (max-width: 600px) {
     font-size: 2.5rem;
-    padding: 10px;
-    margin-top: -30vh;
+    padding: 20px;
+    margin-top: -40vh;
     width: 80%;
     border-left: 0;
   }
@@ -47,8 +47,9 @@ export const Description = styled.h3`
   border-left: 10px solid #48d8a4;
 
   @media (max-width: 600px) {
-    padding: 10px;
+    padding: 0 20px;
     font-size: 1.5rem;
+    width: 70%;
     border-left: 0;
   }
 `
@@ -63,8 +64,9 @@ export const Text = styled.p`
   border-left: 10px solid #48d8a4;
 
   @media (max-width: 600px) {
-    padding: 10px;
+    padding: 20px;
     font-size: 1rem;
     border-left: 0;
+    width: 65%;
   }
 `
