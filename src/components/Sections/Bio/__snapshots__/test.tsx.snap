@@ -42,6 +42,40 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
   border-left: 10px solid #48d8a4;
 }
 
+@media (max-width: 600px) {
+  .c0 {
+    background: linear-gradient(120deg, #2c2a32 57%, #48d8a4 33%);
+    padding-left: 1vh;
+    align-items: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .c1 {
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-top: -30vh;
+    width: 80%;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .c2 {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .c3 {
+    padding: 10px;
+    font-size: 1rem;
+    border-left: 0;
+  }
+}
+
 <main
   class="c0"
 >

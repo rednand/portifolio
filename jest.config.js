@@ -18,7 +18,8 @@ module.exports = {
   },
   transformIgnorePatterns: ['node_modules/(?!(strip-ansi|string-width)/)'],
   moduleNameMapper: {
-    '^styled-components':
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^styled-components$':
       'styled-components/dist/styled-components.browser.cjs.js'
   }
 }

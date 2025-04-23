@@ -9,4 +9,8 @@ export const Wrapper = styled.section`
   font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   margin: auto;
   scroll-snap-align: start;
+
+  @media (max-width: 600px) {
+    padding: 3vh;
+  }
 `

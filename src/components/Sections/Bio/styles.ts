@@ -12,6 +12,12 @@ export const Wrapper = styled.main`
   font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   margin: auto;
   scroll-snap-align: start;
+
+  @media (max-width: 600px) {
+    background: linear-gradient(120deg, #2c2a32 57%, #48d8a4 33%);
+    padding-left: 1vh;
+    align-items: start;
+  }
 `
 
 export const Title = styled.h1`
@@ -22,6 +28,14 @@ export const Title = styled.h1`
   color: #fefefe;
   font-weight: 400;
   border-left: 10px solid #48d8a4;
+
+  @media (max-width: 600px) {
+    font-size: 2.5rem;
+    padding: 10px;
+    margin-top: -30vh;
+    width: 80%;
+    border-left: 0;
+  }
 `
 
 export const Description = styled.h3`
@@ -31,6 +45,12 @@ export const Description = styled.h3`
   color: #fefefe;
   font-weight: 100;
   border-left: 10px solid #48d8a4;
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-left: 0;
+  }
 `
 
 export const Text = styled.p`
@@ -41,4 +61,10 @@ export const Text = styled.p`
   color: #fefefe;
   font-weight: 100;
   border-left: 10px solid #48d8a4;
+
+  @media (max-width: 600px) {
+    padding: 10px;
+    font-size: 1rem;
+    border-left: 0;
+  }
 `

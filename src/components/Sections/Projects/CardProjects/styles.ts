@@ -1,4 +1,3 @@
-// styles.js
 import styled from 'styled-components'
 
 export const ContainerCard = styled.div`
@@ -7,6 +6,12 @@ export const ContainerCard = styled.div`
   gap: 20px;
   margin-bottom: 5%;
   justify-content: flex-start;
+
+  @media (max-width: 600px) {
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
 `
 
 export const Card = styled.div`
@@ -17,6 +22,12 @@ export const Card = styled.div`
   &:hover {
     transform: translateY(-5px);
     border-bottom: 5px solid #48d8a4;
+  }
+
+  @media (max-width: 600px) {
+    width: 300px;
+    padding: 0;
+    margin-bottom: 5%;
   }
 `
 
@@ -29,6 +40,14 @@ export const CardImage = styled.img`
 
   &:hover {
     opacity: 1;
+  }
+
+  @media (max-width: 414px) {
+    width: 80vw;
+  }
+
+  @media (max-width: 600px) {
+    width: 50vw;
   }
 `
 
