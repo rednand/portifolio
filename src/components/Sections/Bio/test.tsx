@@ -7,13 +7,12 @@ describe('Bio Component', () => {
     const { container } = render(<Bio />)
 
     expect(
-      screen.getByText('lorem ipsium lorem ipsiumlorem')
+      screen.getByRole('heading', { name: /Renan de Aguiar Modesto/i })
     ).toBeInTheDocument()
-
+    expect(screen.getByText(/Desenvolvedor Front-End/i)).toBeInTheDocument()
     expect(
-      screen.getByText(/Analista de Sistemas com experiência na área/i)
+      screen.getByText(/Desenvolvedor de Sistemas com experiência/i)
     ).toBeInTheDocument()
-
     expect(container.firstChild).toMatchSnapshot()
   })
 

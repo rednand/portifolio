@@ -7,12 +7,14 @@ interface ScrollButtonsProps {
   bioRef: MutableRefObject<HTMLDivElement | null>
   aboutRef: MutableRefObject<HTMLDivElement | null>
   experiencesRef: MutableRefObject<HTMLDivElement | null>
+  projectsRef: MutableRefObject<HTMLDivElement | null>
 }
 
 export default function ScrollButtons({
   bioRef,
   aboutRef,
-  experiencesRef
+  experiencesRef,
+  projectsRef
 }: ScrollButtonsProps) {
   const scrollToBio = (ref: MutableRefObject<HTMLDivElement | null>) => {
     if (ref.current) {
@@ -39,6 +41,12 @@ export default function ScrollButtons({
         onClick={() => scrollToBio(experiencesRef)}
       >
         Experiências
+      </Style.ButtonsScrollButton>
+      <Style.ButtonsScrollButton
+        size="large-last"
+        onClick={() => scrollToBio(projectsRef)}
+      >
+        Projetos
       </Style.ButtonsScrollButton>
     </Style.DivScrollButtons>
   )

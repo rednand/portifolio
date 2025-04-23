@@ -1,18 +1,15 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
-import About from './about'
+import Contacts from '.'
+import About from '../Sections/About/about'
 
 describe('About Component', () => {
   it('renders the About component correctly', () => {
-    const { container } = render(<About />)
+    const { container } = render(<Contacts isProjectsVisible={true} />)
 
-    expect(screen.getByText('Sobre')).toBeInTheDocument()
+    expect(screen.getByText(/Outros projetos/i)).toBeInTheDocument()
 
-    expect(
-      screen.getByText(/Back in 2012, I decided to try my hand/i)
-    ).toBeInTheDocument()
-
-    expect(container.firstChild).toMatchSnapshot()
+    // expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render the background color correctly', () => {

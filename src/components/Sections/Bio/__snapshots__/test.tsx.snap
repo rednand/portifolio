@@ -3,10 +3,14 @@
 exports[`Bio Component renders the Bio component correctly 1`] = `
 .c0 {
   height: 100vh;
-  padding: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vh;
   background: linear-gradient(120deg, #2c2a32 57%, #48d8a4 33%);
   font-family: 'Segoe UI',Roboto,'Helvetica Neue',sans-serif;
   margin: auto;
+  scroll-snap-align: start;
 }
 
 .c1 {
@@ -14,7 +18,6 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
   line-height: 120%;
   padding: 20px;
   width: 70%;
-  margin-top: 140px;
   color: #fefefe;
   font-weight: 400;
   border-left: 10px solid #48d8a4;
@@ -42,22 +45,26 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
 <main
   class="c0"
 >
-  <div>
-    <h1
-      class="c1"
-    >
-      lorem ipsium lorem ipsiumlorem
-    </h1>
-    <h3
-      class="c2"
-    >
-      Desenvolvedor Front-End
-    </h3>
-    <p
-      class="c3"
-    >
-      Analista de Sistemas com experiência na área de Desenvolvimento Web / Front-end. Trabalho há 2 anos desenvolvendo aplicações web para a área de crédito e investimentos utilizando ReactJS, HTML, CSS, JavaScript e React Native.
-    </p>
+  <div
+    style="margin: auto; display: flex; align-items: center;"
+  >
+    <div>
+      <h1
+        class="c1"
+      >
+        Renan de Aguiar Modesto
+      </h1>
+      <h3
+        class="c2"
+      >
+        Desenvolvedor Front-End
+      </h3>
+      <p
+        class="c3"
+      >
+        Desenvolvedor de Sistemas com experiência na área de Desenvolvimento Web / Front-end. Trabalho há mais de 3 anos desenvolvendo aplicações web para a área de crédito e investimentos utilizando ReactJS, HTML, CSS, JavaScript, TypeScript, React Native e NextJS.
+      </p>
+    </div>
   </div>
 </main>
 `;
