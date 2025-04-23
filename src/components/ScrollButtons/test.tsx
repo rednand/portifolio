@@ -2,12 +2,11 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import ScrollButtons from '.'
 import React from 'react'
 
-const createRefMock = () => {
-  const scrollIntoView = jest.fn()
+const createRefMock = (): React.RefObject<HTMLDivElement> => {
   return {
     current: {
-      scrollIntoView
-    }
+      scrollIntoView: jest.fn()
+    } as unknown as HTMLDivElement
   }
 }
 
@@ -20,10 +19,10 @@ describe('<ScrollButtons />', () => {
 
     render(
       <ScrollButtons
-        bioRef={bioRef as any}
-        aboutRef={aboutRef as any}
-        experiencesRef={experiencesRef as any}
-        projectsRef={projectsRef as any}
+        bioRef={bioRef}
+        aboutRef={aboutRef}
+        experiencesRef={experiencesRef}
+        projectsRef={projectsRef}
       />
     )
 
@@ -37,16 +36,24 @@ describe('<ScrollButtons />', () => {
     ).toBeInTheDocument()
 
     fireEvent.click(screen.getByText(/bio/i))
-    expect(bioRef.current.scrollIntoView).toHaveBeenCalled()
-
+    if (bioRef.current) {
+      expect(bioRef.current.scrollIntoView).toHaveBeenCalled()
+    }
     fireEvent.click(screen.getByText(/sobre/i))
-    expect(aboutRef.current.scrollIntoView).toHaveBeenCalled()
+    if (aboutRef.current) {
+      expect(aboutRef.current.scrollIntoView).toHaveBeenCalled()
+    }
 
     fireEvent.click(screen.getByText(/experiências/i))
-    expect(experiencesRef.current.scrollIntoView).toHaveBeenCalled()
+    if (experiencesRef.current) {
+      expect(experiencesRef.current.scrollIntoView).toHaveBeenCalled()
+    }
 
     fireEvent.click(screen.getByText(/projetos/i))
-    expect(projectsRef.current.scrollIntoView).toHaveBeenCalled()
+
+    if (projectsRef.current) {
+      expect(projectsRef.current.scrollIntoView).toHaveBeenCalled()
+    }
   })
 
   it('should not throw if ref.current is null', () => {

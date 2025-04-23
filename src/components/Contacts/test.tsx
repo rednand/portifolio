@@ -9,7 +9,7 @@ describe('About Component', () => {
 
     expect(screen.getByText(/Outros projetos/i)).toBeInTheDocument()
 
-    // expect(container.firstChild).toMatchSnapshot()
+    expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render the background color correctly', () => {

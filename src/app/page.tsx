@@ -34,13 +34,15 @@ export default function Home() {
       { threshold: 0.5 }
     )
 
-    if (projectsRef.current) {
-      observer.observe(projectsRef.current)
+    const projectsNode = projectsRef.current
+
+    if (projectsNode) {
+      observer.observe(projectsNode)
     }
 
     return () => {
-      if (projectsRef.current) {
-        observer.unobserve(projectsRef.current)
+      if (projectsNode) {
+        observer.unobserve(projectsNode)
       }
     }
   }, [])
