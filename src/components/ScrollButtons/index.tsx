@@ -2,6 +2,7 @@
 
 import { MutableRefObject } from 'react'
 import * as Style from './styles'
+import { useWindowSize } from '@/hooks'
 
 interface ScrollButtonsProps {
   bioRef: MutableRefObject<HTMLDivElement | null>
@@ -16,6 +17,8 @@ export default function ScrollButtons({
   experiencesRef,
   projectsRef
 }: ScrollButtonsProps) {
+  const { width } = useWindowSize()
+
   const scrollToBio = (ref: MutableRefObject<HTMLDivElement | null>) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' })
@@ -23,7 +26,7 @@ export default function ScrollButtons({
   }
 
   return (
-    <Style.DivScrollButtons>
+    <Style.DivScrollButtons size={width}>
       <Style.ButtonsScrollButton
         size="small"
         onClick={() => scrollToBio(bioRef)}

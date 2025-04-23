@@ -11,6 +11,7 @@ import Bio from '../components/Sections/Bio'
 
 const ScrollContainer = styled.main`
   height: 100vh;
+  background: #2c2a32;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 `

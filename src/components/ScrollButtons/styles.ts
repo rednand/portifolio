@@ -2,13 +2,15 @@
 
 import styled from 'styled-components'
 
-export const DivScrollButtons = styled.div`
+export const DivScrollButtons = styled.div<{
+  size: number
+}>`
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  right: 5vw;
-  top: 8vh;
+  right: ${(props) => (props.size < 500 ? '10vw' : '5vw')};
+  top: ${(props) => (props.size < 500 ? '75vh' : '8vh')};
   position: fixed;
   gap: 1rem;
 `
