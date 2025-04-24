@@ -12,6 +12,11 @@ export const ContainerCard = styled.div`
     flex-wrap: nowrap;
     overflow-x: auto;
   }
+
+  @media (min-width: 600px) and (max-width: 1000px) {
+    overflow: auto;
+    height: 90vh;
+  }
 `
 
 export const Card = styled.div`
