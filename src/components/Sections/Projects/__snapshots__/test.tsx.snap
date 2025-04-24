@@ -79,6 +79,12 @@ exports[`<Projects /> should render the heading 1`] = `
   }
 }
 
+@media (min-width: 600px) and (max-width: 1000px) {
+  .c0 {
+    height: 110vh;
+  }
+}
+
 @media (max-width: 600px) {
   .c1 {
     margin: 8% 0;
@@ -90,6 +96,13 @@ exports[`<Projects /> should render the heading 1`] = `
     gap: 10px;
     flex-wrap: nowrap;
     overflow-x: auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .c2 {
+    overflow: auto;
+    height: 90vh;
   }
 }
 
