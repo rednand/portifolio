@@ -13,4 +13,8 @@ export const Wrapper = styled.section`
   @media (max-width: 600px) {
     padding: 3vh;
   }
+
+  @media (min-width: 600px) and (max-width: 1000px) {
+    height: 110vh;
+  }
 `
