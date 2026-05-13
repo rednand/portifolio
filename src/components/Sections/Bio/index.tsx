@@ -4,7 +4,7 @@ import * as Style from './styles'
 export default function Bio() {
   return (
     <Style.Wrapper>
-      <div style={{ margin: 'auto', display: 'flex', alignItems: 'center' }}>
+      <Style.InnerWrapper>
         <div>
           <Style.Title>Renan de Aguiar Modesto</Style.Title>
           <Style.Description>Desenvolvedor Front-End</Style.Description>
@@ -15,7 +15,7 @@ export default function Bio() {
             CSS, JavaScript, TypeScript, React Native e NextJS.
           </Style.Text>
         </div>
-      </div>
+      </Style.InnerWrapper>
     </Style.Wrapper>
   )
 }

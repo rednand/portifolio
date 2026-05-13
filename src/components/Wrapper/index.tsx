@@ -1,6 +1,7 @@
 'use client'
 
 import styled from 'styled-components'
+import { breakpoints } from '@/styles/breakpoints'
 
 export const Wrapper = styled.section`
   height: 100vh;
@@ -10,11 +11,11 @@ export const Wrapper = styled.section`
   margin: auto;
   scroll-snap-align: start;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     padding: 3vh;
   }
 
-  @media (min-width: 600px) and (max-width: 1000px) {
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
     height: 110vh;
   }
 `

@@ -1,6 +1,13 @@
 'use client'
 
 import styled from 'styled-components'
+import { breakpoints } from '@/styles/breakpoints'
+
+export const InnerWrapper = styled.div`
+  margin: auto;
+  display: flex;
+  align-items: center;
+`
 
 export const Wrapper = styled.main`
   height: 100vh;
@@ -13,7 +20,7 @@ export const Wrapper = styled.main`
   margin: auto;
   scroll-snap-align: start;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     background: linear-gradient(120deg, #2c2a32 57%, #48d8a4 33%);
     padding-left: 1vh;
     align-items: start;
@@ -29,7 +36,7 @@ export const Title = styled.h1`
   font-weight: 400;
   border-left: 10px solid #48d8a4;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     font-size: 2.5rem;
     padding: 20px;
     margin-top: -40vh;
@@ -46,7 +53,7 @@ export const Description = styled.h3`
   font-weight: 100;
   border-left: 10px solid #48d8a4;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     padding: 0 20px;
     font-size: 1.5rem;
     width: 70%;
@@ -63,7 +70,7 @@ export const Text = styled.p`
   font-weight: 100;
   border-left: 10px solid #48d8a4;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     padding: 20px;
     font-size: 1rem;
     border-left: 0;

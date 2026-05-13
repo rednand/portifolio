@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Bio Component renders the Bio component correctly 1`] = `
+.c1 {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
 .c0 {
   height: 100vh;
   display: flex;
@@ -13,7 +19,7 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
   scroll-snap-align: start;
 }
 
-.c1 {
+.c2 {
   font-size: 4rem;
   line-height: 120%;
   padding: 20px;
@@ -23,7 +29,7 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
   border-left: 10px solid #48d8a4;
 }
 
-.c2 {
+.c3 {
   font-size: 2.5rem;
   width: 50%;
   padding: 20px;
@@ -32,7 +38,7 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
   border-left: 10px solid #48d8a4;
 }
 
-.c3 {
+.c4 {
   font-size: 1.5rem;
   line-height: 150%;
   width: 50%;
@@ -51,7 +57,7 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
 }
 
 @media (max-width: 600px) {
-  .c1 {
+  .c2 {
     font-size: 2.5rem;
     padding: 20px;
     margin-top: -40vh;
@@ -61,7 +67,7 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
 }
 
 @media (max-width: 600px) {
-  .c2 {
+  .c3 {
     padding: 0 20px;
     font-size: 1.5rem;
     width: 70%;
@@ -70,7 +76,7 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
 }
 
 @media (max-width: 600px) {
-  .c3 {
+  .c4 {
     padding: 20px;
     font-size: 1rem;
     border-left: 0;
@@ -82,21 +88,21 @@ exports[`Bio Component renders the Bio component correctly 1`] = `
   class="c0"
 >
   <div
-    style="margin: auto; display: flex; align-items: center;"
+    class="c1"
   >
     <div>
       <h1
-        class="c1"
+        class="c2"
       >
         Renan de Aguiar Modesto
       </h1>
       <h3
-        class="c2"
+        class="c3"
       >
         Desenvolvedor Front-End
       </h3>
       <p
-        class="c3"
+        class="c4"
       >
         Desenvolvedor de Sistemas com experiência na área de Desenvolvimento Web / Front-end. Trabalho há mais de 3 anos desenvolvendo aplicações web para a área de crédito e investimentos utilizando ReactJS, HTML, CSS, JavaScript, TypeScript, React Native e NextJS.
       </p>

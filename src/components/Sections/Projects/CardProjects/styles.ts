@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Image from 'next/image'
+import { breakpoints } from '@/styles/breakpoints'
 
 export const ContainerCard = styled.div`
   display: flex;
@@ -7,13 +9,13 @@ export const ContainerCard = styled.div`
   margin-bottom: 5%;
   justify-content: flex-start;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     gap: 10px;
     flex-wrap: nowrap;
     overflow-x: auto;
   }
 
-  @media (min-width: 600px) and (max-width: 1000px) {
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
     overflow: auto;
     height: 90vh;
   }
@@ -29,17 +31,17 @@ export const Card = styled.div`
     border-bottom: 5px solid #48d8a4;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     width: 300px;
     padding: 0;
     margin-bottom: 5%;
   }
 `
 
-export const CardImage = styled.img`
-  width: 100%;
-  height: 150px;
-  object-fit: fill;
+export const CardImage = styled(Image)`
+  width: 100% !important;
+  height: 150px !important;
+  object-fit: cover;
   border-radius: 8px 8px 0 0;
   opacity: 0.5;
 
@@ -47,12 +49,12 @@ export const CardImage = styled.img`
     opacity: 1;
   }
 
-  @media (max-width: 414px) {
-    width: 80vw;
+  @media (max-width: ${breakpoints.smallMobile}) {
+    width: 80vw !important;
   }
 
-  @media (max-width: 600px) {
-    width: 50vw;
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 50vw !important;
   }
 `
 

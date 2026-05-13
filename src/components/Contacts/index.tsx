@@ -20,14 +20,13 @@ export default function Contacts({
 
   return width < 600 ? (
     <>
-      <Style.ButtonShowContact>
+      <Style.ButtonShowContact
+        onClick={() => setIsShowingContact(!isShowingContact)}
+        aria-label={isShowingContact ? 'Fechar contatos' : 'Mostrar contatos'}
+        aria-expanded={isShowingContact}
+      >
         <Style.TooltipWrapper>
-          <RiContactsBook3Fill
-            onClick={() => setIsShowingContact(!isShowingContact)}
-            size={20}
-            color="white"
-            style={{ cursor: 'pointer' }}
-          />
+          <RiContactsBook3Fill size={20} color="white" />
           <Style.Tooltip>Contato</Style.Tooltip>
         </Style.TooltipWrapper>
       </Style.ButtonShowContact>
@@ -53,6 +52,7 @@ export default function Contacts({
                 href={contact.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={contact.name}
               >
                 {IconComponent && <IconComponent size={20} />}
               </Style.NavLink>
@@ -86,6 +86,7 @@ export default function Contacts({
             href={contact.href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={contact.name}
           >
             {IconComponent && <IconComponent size={20} />}
           </Style.NavLink>
