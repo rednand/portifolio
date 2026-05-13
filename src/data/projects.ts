@@ -26,6 +26,13 @@ const projects: Project[] = [
     image: '/images/api-vhs404.png'
   },
   {
+    title: 'Highlight',
+    description:
+      'Aplicativo para estudantes de inglês anotarem vocabulário das aulas e revisarem com flashcards usando o algoritmo SM-2, acompanhando o progresso em uma trilha de aprendizado.',
+    github: 'https://github.com/rednand/highlight-app-learning-english',
+    image: '/images/highlight.png'
+  },
+  {
     title: 'Checklist App',
     description:
       'Aplicação web onde o usuário descreve uma tarefa e a IA gera uma checklist organizada por categorias. Suporta importação de PDF e planilhas.',
