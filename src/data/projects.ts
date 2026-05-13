@@ -29,6 +29,7 @@ const projects: Project[] = [
     title: 'Highlight',
     description:
       'Aplicativo para estudantes de inglês anotarem vocabulário das aulas e revisarem com flashcards usando o algoritmo SM-2, acompanhando o progresso em uma trilha de aprendizado.',
+    link: 'https://highlight-english-learning.vercel.app/',
     github: 'https://github.com/rednand/highlight-app-learning-english',
     image: '/images/highlight.png'
   },
@@ -36,6 +37,7 @@ const projects: Project[] = [
     title: 'Checklist App',
     description:
       'Aplicação web onde o usuário descreve uma tarefa e a IA gera uma checklist organizada por categorias. Suporta importação de PDF e planilhas.',
+    link: 'https://checklist-app-mauve.vercel.app/',
     github: 'https://github.com/rednand/checklist-app',
     image: '/images/checklist-app.png'
   },
