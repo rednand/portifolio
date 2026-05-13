@@ -1,4 +1,6 @@
-export const contacts = [
+import type { Contact } from '@/types/data'
+
+export const contacts: Contact[] = [
   { name: 'Github', href: 'https://github.com/rednand' },
   {
     name: 'Linkedin',

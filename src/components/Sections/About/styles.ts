@@ -1,6 +1,7 @@
 'use client'
 
 import styled from 'styled-components'
+import { breakpoints } from '@/styles/breakpoints'
 
 export const Wrapper = styled.section`
   background-color: #2c2a32;
@@ -10,7 +11,7 @@ export const Wrapper = styled.section`
   margin: auto;
   scroll-snap-align: start;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     padding: 5vh;
   }
 `
@@ -25,7 +26,7 @@ export const Description = styled.h3`
   font-weight: 700;
   margin-bottom: 3%;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     font-size: 2rem;
     margin: 8% 0;
   }
@@ -40,7 +41,7 @@ export const Text = styled.p`
   font-weight: 100;
   border-bottom: 10px solid #48d8a4;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${breakpoints.mobile}) {
     font-size: 1rem;
     width: 100%;
   }

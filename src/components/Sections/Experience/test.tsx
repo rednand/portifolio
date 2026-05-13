@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Experiences from '.'
+import experiences from '../../../data/experience'
 
 describe('Experiences Component', () => {
   it('renders the Experiences component correctly', () => {
@@ -11,17 +12,17 @@ describe('Experiences Component', () => {
     expect(container.firstChild).toMatchSnapshot()
   })
 
-  // it('should render all experience items from the map', () => {
-  //   render(<Experiences />)
+  it('should render all experience items from the map', () => {
+    render(<Experiences />)
 
-  //   mockExperiences.forEach((item) => {
-  //     expect(screen.getByText(item.jobTitle)).toBeInTheDocument()
-  //     expect(screen.getByText(item.company)).toBeInTheDocument()
-  //     expect(
-  //       screen.getByText(`${item.startDate} - ${item.endDate}`)
-  //     ).toBeInTheDocument()
-  //   })
-  // })
+    experiences.forEach((item) => {
+      expect(screen.getAllByText(item.jobTitle).length).toBeGreaterThan(0)
+      expect(screen.getByText(item.company)).toBeInTheDocument()
+      expect(
+        screen.getByText(`${item.startDate} - ${item.endDate}`)
+      ).toBeInTheDocument()
+    })
+  })
 
   it('should render the background color correctly', () => {
     const { container } = render(<Experiences />)

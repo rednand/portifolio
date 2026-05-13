@@ -51,7 +51,7 @@ export const ContainerNav = styled.nav`
   gap: 1rem;
 `
 
-export const ButtonShowContact = styled.nav`
+export const ButtonShowContact = styled.button`
   margin: auto;
   display: flex;
   align-items: baseline;
