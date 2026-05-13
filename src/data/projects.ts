@@ -2,12 +2,12 @@ import type { Project } from '@/types/data'
 
 const projects: Project[] = [
   {
-    title: 'Se Liga, Hein',
+    title: 'API do Aplicativo Web VHS 404',
     description:
-      'Projeto desenvolvido no curso de Desenvolvimento Web Front-End Node da Digital House.',
-    link: 'https://se-liga-hein.vercel.app/',
-    github: 'https://github.com/nmaia19/se_liga_hein',
-    image: '/images/se-liga.png'
+      'API desenvolvida para o aplicativo web VHS 404, criada durante estágio como desenvolvedor Front-End.',
+    link: 'https://api-vhs404.vercel.app/',
+    github: 'https://github.com/rednand/API-AppVHS404',
+    image: '/images/api-vhs404.png'
   },
   {
     title: 'Aplicativo Web VHS 404',
@@ -18,12 +18,12 @@ const projects: Project[] = [
     image: '/images/app-vhs404.png'
   },
   {
-    title: 'API do Aplicativo Web VHS 404',
+    title: 'Checklist App',
     description:
-      'API desenvolvida para o aplicativo web VHS 404, criada durante estágio como desenvolvedor Front-End.',
-    link: 'https://api-vhs404.vercel.app/',
-    github: 'https://github.com/rednand/API-AppVHS404',
-    image: '/images/api-vhs404.png'
+      'Aplicação web onde o usuário descreve uma tarefa e a IA gera uma checklist organizada por categorias. Suporta importação de PDF e planilhas.',
+    link: 'https://checklist-app-mauve.vercel.app/',
+    github: 'https://github.com/rednand/checklist-app',
+    image: '/images/checklist-app.png'
   },
   {
     title: 'Desafio Final VTEX Hiring Coders 2021',
@@ -31,6 +31,22 @@ const projects: Project[] = [
       'Landing page criada durante o bootcamp Hiring Coders, que faz a integração da API do VTEX IO com a API da AWS.',
     github: 'https://github.com/rednand/corebiz-store',
     image: '/images/corebiz.png'
+  },
+  {
+    title: 'Highlight',
+    description:
+      'Aplicativo para estudantes de inglês anotarem vocabulário das aulas e revisarem com flashcards usando o algoritmo SM-2, acompanhando o progresso em uma trilha de aprendizado.',
+    link: 'https://highlight-english-learning.vercel.app/',
+    github: 'https://github.com/rednand/highlight-app-learning-english',
+    image: '/images/highlight.png'
+  },
+  {
+    title: 'Se Liga, Hein',
+    description:
+      'Projeto desenvolvido no curso de Desenvolvimento Web Front-End Node da Digital House.',
+    link: 'https://se-liga-hein.vercel.app/',
+    github: 'https://github.com/nmaia19/se_liga_hein',
+    image: '/images/se-liga.png'
   }
 ]
 
