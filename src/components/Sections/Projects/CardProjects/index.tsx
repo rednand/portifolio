@@ -2,6 +2,7 @@ import projects from '../../../../data/projects'
 import * as Style from './styles'
 import { FiGithub } from 'react-icons/fi'
 import { useState } from 'react'
+import { breakpoints } from '@/styles/breakpoints'
 
 const CardProjects = () => {
   const [showIconGithub, setShowIconGithub] = useState<null | number>(null)
@@ -14,7 +15,13 @@ const CardProjects = () => {
           onMouseEnter={() => setShowIconGithub(index)}
           onMouseLeave={() => setShowIconGithub(null)}
         >
-          <Style.CardImage src={project.image} alt={project.projeto} />
+          <Style.CardImage
+            src={project.image}
+            alt={project.title}
+            width={300}
+            height={150}
+            sizes={`(max-width: ${breakpoints.smallMobile}) 80vw, (max-width: ${breakpoints.mobile}) 50vw, 300px`}
+          />
           <Style.CardContent>
             <Style.CardTitle>
               {project.link ? (
@@ -23,13 +30,13 @@ const CardProjects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {project.projeto}
+                  {project.title}
                 </a>
               ) : (
-                project.projeto
+                project.title
               )}
             </Style.CardTitle>
-            <Style.CardDescription>{project.descricao}</Style.CardDescription>
+            <Style.CardDescription>{project.description}</Style.CardDescription>
           </Style.CardContent>
           {showIconGithub === index && (
             <Style.CardButtonContainer>
