@@ -15,7 +15,7 @@ export const ContainerCard = styled.div`
     overflow-x: auto;
   }
 
-  @media (min-width: ${breakpoints.mobile}) and (max-width: 1000px) {
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
     overflow: auto;
     height: 90vh;
   }
