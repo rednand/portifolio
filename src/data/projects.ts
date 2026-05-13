@@ -26,6 +26,13 @@ const projects: Project[] = [
     image: '/images/api-vhs404.png'
   },
   {
+    title: 'Checklist App',
+    description:
+      'Aplicação web onde o usuário descreve uma tarefa e a IA gera uma checklist organizada por categorias. Suporta importação de PDF e planilhas.',
+    github: 'https://github.com/rednand/checklist-app',
+    image: '/images/checklist-app.png'
+  },
+  {
     title: 'Desafio Final VTEX Hiring Coders 2021',
     description:
       'Landing page criada durante o bootcamp Hiring Coders, que faz a integração da API do VTEX IO com a API da AWS.',
